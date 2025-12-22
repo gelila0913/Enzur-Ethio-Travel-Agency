@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Enzur-Ethio Travel Agency</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- ===== HEADER (Same as Homepage) ===== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <h1><span class="brand">Enzur-Ethio </span>Travel Agency</h1>
+                        <p class="tagline">Discover Ethiopia's Hidden Gems</p>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="packages.html"><i class="fas fa-suitcase-rolling"></i> Packages</a></li>
+                    <li><a href="about.html"><i class="fas fa-images"></i> About</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTACT HERO ===== -->
+    <section class="page-hero contact-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">Get in touch with our travel experts to plan your Ethiopian adventure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT INFO SECTION ===== -->
+    <section class="section contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <!-- Contact Card 1 -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Office</h3>
+                    <p>Bole Road, Addis Ababa<br>Ethiopia</p>
+                </div>
+                
+                <!-- Contact Card 2 -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+251 91 234 5678<br>+251 92 345 6789</p>
+                </div>
+                
+                <!-- Contact Card 3 -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@enzurethio.com<br>bookings@enzurethio.com</p>
+                    <a href=#contactForm class="btn-small">Send Email</a>
+                </div>
+                
+                <!-- Contact Card 4 -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p>Mon-Fri: 8:30 AM - 5:30 PM<br>Sat: 9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM SECTION ===== -->
+    <section class="section contact-form-section">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="form-intro">
+                    <h2>Send us a Message</h2>
+                    <p>Have questions about our tours or need help planning your trip? Fill out the form below and one of our travel experts will get back to you within 24 hours.</p>
+                    <div class="form-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick response guaranteed</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert travel advice</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom itinerary planning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select inquiry type</option>
+                            <option value="booking">Tour Booking Inquiry</option>
+                            <option value="custom">Custom Tour Request</option>
+                            <option value="group">Group Travel Inquiry</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="other">Other Questions</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your travel plans, questions, or requirements..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for travel tips and special offers</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find quick answers to common questions about our services</p>
+            
+            <div class="faq-grid">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the best time to visit Ethiopia?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The best time to visit Ethiopia is during the dry season from October to June. However, different regions have optimal visiting times, so we recommend consulting with our travel experts for your specific itinerary.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need a visa to visit Ethiopia?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most visitors require a visa to enter Ethiopia. You can obtain an e-visa online before travel or get a visa on arrival at Bole International Airport. We provide visa assistance to all our clients.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is included in your tour packages?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our tour packages typically include accommodation, transportation, guided tours, entrance fees, and some meals. Specific inclusions vary by package, and all details are clearly listed in each package description.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAP SECTION ===== -->
+    <section class="section map-section">
+        <div class="container">
+            <h2 class="section-title">Find Our Office</h2>
+            <p class="section-subtitle">Visit us in Addis Ababa to discuss your travel plans in person</p>
+            
+            <div class="map-wrapper">
+                <!-- Embed Google Map (replace with actual embed code) -->
+                <div class="map-placeholder">
+                    <div class="map-info">
+                        <h3>Enzur-Ethio Travel Agency</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Bole Road, Addis Ababa, Ethiopia</p>
+                        <p><i class="fas fa-phone"></i> +251 91 234 5678</p>
+                        <p><i class="fas fa-envelope"></i> info@enzurethio.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 5:30 PM</p>
+                    </div>
+                    <div class="map-image">
+                        <!-- In real implementation, replace with Google Maps embed -->
+                        <div class="map-mockup">
+                            <p>Showing location of our office in Addis Ababa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Ethiopian Adventure?</h2>
+                <p>Contact us today to begin planning your unforgettable journey through Ethiopia</p>
+                <div class="cta-buttons">
+                    <a href="tel:+251912345678" class="btn-primary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="packages.html" class="btn-secondary">
+                        <i class="fas fa-compass"></i> Browse Tours
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER (Same as Homepage) ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <h3>Enzur-Ethio Agency</h3>
+                    <p class="footer-text">Providing authentic Ethiopian travel experiences since 2015. Discover the real Ethiopia with local experts.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html" class="active">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Popular Packages -->
+                <div class="footer-col">
+                    <h4>Popular Packages</h4>
+                    <ul class="footer-links">
+                        <li><a href="packages.html#gonder">Gondar Castle Experience</a></li>
+                        <li><a href="packages.html#arbaminch">Arba Minch Safari</a></li>
+                        <li><a href="packages.html#wenchi">Wenchi Crater Lake</a></li>
+                        <li><a href="packages.html#hawassa">Hawassa Lake Retreat</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</li>
+                        <li><i class="fas fa-phone"></i> +251 91 234 5678</li>
+                        <li><i class="fas fa-phone"></i> +251 92 345 6789</li>
+                        <li><i class="fas fa-envelope"></i> info@enzurethio.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 5:30 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Enzur-Ethio Travel Agency. All rights reserved.</p>
+                <p>Website designed for HTML & CSS Final Project</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+// Mobile menu toggle - EXACTLY like Homepage
+document.getElementById('mobileToggle').addEventListener('click', function() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('show');
+});
+
+// Close mobile menu when clicking outside - EXACTLY like Homepage
+document.addEventListener('click', function(event) {
+    const navMenu = document.querySelector('.nav-menu');
+    const mobileToggle = document.getElementById('mobileToggle');
+    
+    if (!navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
+        navMenu.classList.remove('show');
+    }
+});
+
+// Close mobile menu when clicking a link - EXACTLY like Homepage
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', function() {
+        const navMenu = document.querySelector('.nav-menu');
+        navMenu.classList.remove('show');
+    });
+});
+
+// Header scroll effect (optional - same as homepage)
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Rest of your contact page JavaScript (FAQ, form submission, etc.) goes here...
+</script>
+</body>
+</html>
