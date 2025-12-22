@@ -806,6 +806,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .header{
+        height:25%;
+    }
     .logo{
         line-height: 30px;
         gap:10px;
