@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzur-Ethio Travel Agency | Discover Ethiopia's Beauty</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <h1><span class="brand">Enzur-Ethio</span> Travel Agency</h1>
+                        <p class="tagline">Discover Ethiopia's Hidden Games</p>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="packages.html"><i class="fas fa-suitcase-rolling"></i> Packages</a></li>
+                    <li><a href="about.html"><i class="fas fa-images"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== SECTION 1: HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2 class="hero-title">Experience the Majesty of Ethiopia</h2>
+                <p class="hero-subtitle">From historic Gondar castles to stunning Wenchi crater lakes - authentic adventures await!</p>
+                <div class="hero-buttons">
+                    <a href="#tour" class="btn-primary"><i class="fas fa-compass"></i> Explore Tours</a>
+                    <a href="packages.html" class="btn-secondary"><i class="fas fa-calendar-check"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- In your index.html homepage -->
+<section class="section destinations">
+    <div class="container">
+        <h2 class="section-title">Popular Ethiopian Destinations</h2>
+        <p class="section-subtitle">Explore our most requested tour locations across Ethiopia</p>
+        
+        <div class="destinations-grid" id="tour">
+            <!-- Destination Card 1: Mekele -->
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="image/mekele.jpg" alt="Mekele, Tigray">
+                    <div class="card-overlay">
+                        <span class="tag">Historical</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Mekele, Tigray</h3>
+                    <p>Discover rich history, ancient rock churches, and vibrant markets in Tigray's capital.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-clock"></i> 3-5 Days</span>
+                        <span><i class="fas fa-hiking"></i> Cultural</span>
+                    </div>
+                    <!-- Link to specific destination section -->
+                    <a href="packages.html#mekele" class="btn-small">View Packages</a>
+                </div>
+            </div>
+            
+            <!-- Destination Card 2: Gondar -->
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="image/gonder.jpg" alt="Gondar Castles">
+                    <div class="card-overlay">
+                        <span class="tag">UNESCO</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Gondar, Amhara</h3>
+                    <p>Explore the "Camelot of Africa" with magnificent castles and royal enclosure.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-clock"></i> 2-4 Days</span>
+                        <span><i class="fas fa-landmark"></i> Architecture</span>
+                    </div>
+                    <!-- Link to specific destination section -->
+                    <a href="packages.html#gonder" class="btn-small">View Packages</a>
+                </div>
+            </div>
+            
+            <!-- Destination Card 3: Wenchi -->
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="image/wenchi.jpg" alt="Wenchi Crater Lake">
+                    <div class="card-overlay">
+                        <span class="tag">Nature</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Wenchi Crater Lake</h3>
+                    <p>Hike around Ethiopia's most beautiful crater lake with stunning views.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-clock"></i> 1-2 Days</span>
+                            <span><i class="fas fa-mountain"></i> Hiking</span>
+                    </div>
+                    <!-- Link to specific destination section -->
+                    <a href="packages.html#wenchi" class="btn-small">View Packages</a>
+                </div>
+            </div>
+            
+            <!-- Destination Card 4: Arba Minch -->
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="image/arbaminch.jpg" alt="Arba Minch">
+                    <div class="card-overlay">
+                        <span class="tag">Adventure</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Arba Minch</h3>
+                    <p>Gateway to Nechisar National Park with wildlife and stunning landscapes.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-clock"></i> 3-5 Days</span>
+                        <span><i class="fas fa-tree"></i> Safari</span>
+                    </div>
+                    <!-- Link to specific destination section -->
+                    <a href="packages.html#arbaminch" class="btn-small">View Packages</a>
+                </div>
+            </div>
+            
+            <!-- Destination Card 5: Hawassa -->
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="image/hawassa.jpg" alt="Hawassa Lake">
+                    <div class="card-overlay">
+                        <span class="tag">Relaxation</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Hawassa, Sidama</h3>
+                    <p>Enjoy the beautiful Lake Hawassa, bird watching, and relaxing resort towns.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-clock"></i> 2-3 Days</span>
+                        <span><i class="fas fa-umbrella-beach"></i> Leisure</span>
+                    </div>
+                    <!-- Link to specific destination section -->
+                    <a href="packages.html#hawassa" class="btn-small">View Packages</a>
+                </div>
+            </div>
+            
+            <!-- Destination Card 6: Ziway -->
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="image/ziway.jpg" alt="Lake Ziway">
+                    <div class="card-overlay">
+                        <span class="tag">Bird Watching</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Lake Ziway, Oromia</h3>
+                    <p>Experience amazing birdlife, boat trips, and island monasteries on this Rift Valley lake.</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-clock"></i> Day Trips</span>
+                        <span><i class="fas fa-dove"></i> Wildlife</span>
+                    </div>
+                    <!-- Link to specific destination section -->
+                    <a href="packages.html#ziway" class="btn-small">View Packages</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <!-- Link to all packages on destinations page -->
+            <a href="packages.html" class="btn-primary">View All Packages</a>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== SECTION 4: TRAVEL STORIES ===== -->
+    <section class="section stories">
+        <div class="container">
+            <h2 class="section-title">Travel Stories & Experiences</h2>
+            <p class="section-subtitle">See Ethiopia through the eyes of our travelers</p>
+            
+            <div class="stories-grid">
+                <!-- Story 1 -->
+                <div class="story-card">
+                    <div class="story-media">
+                        <img src="image/gonder4.jpg" alt="Gondar Castle Experience">
+                        
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span><i class="fas fa-user"></i> Daniel</span>
+                            <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                        </div>
+                        <h3>Journey to Gondar: The Royal City</h3>
+                        <p>Our adventure through the historic castles of Gondar was nothing short of magical. The Fasil Ghebbi fortress complex transported us back to the 17th century...</p>
+                    </div>
+                </div>
+                
+                <!-- Story 2 -->
+                <div class="story-card">
+                    <div class="story-media">
+                        <img src="image/wenchi3.jpg" alt="Wenchi Hiking">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span><i class="fas fa-user"></i> Sarah</span>
+                            <span><i class="fas fa-calendar"></i> February 28, 2024</span>
+                        </div>
+                        <h3>Hiking Wenchi Crater Lake</h3>
+                        <p>A breathtaking hike around Ethiopia's most beautiful crater lake with panoramic views and a visit to the island monastery...</p>
+                    </div>
+                </div>
+                
+                <!-- Story 3 -->
+                <div class="story-card">
+                    <div class="story-media">
+                        <img src="image/hawassa1.jpg" alt="Ziway Bird Watching">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span><i class="fas fa-user"></i> Saron</span>
+                            <span><i class="fas fa-calendar"></i> march 20, 2025</span>
+                        </div>
+                        <h3>Hawassa Waterfall Around AmoraGedel</h3>
+                        <p>Watching the sunrise over Lake Hawassa while surrounded by thousands of Marabou storks and Pelicans was truly unforgettable. Taking a boat out onto the water felt so serene, offering a perfect view of the lush hills and the vibrant life along the shore.</p>
+                    </div>
+                </div>
+<!-- Story 4 -->
+                <div class="story-card">
+                    <div class="story-media">
+                        <img src="image/ziway5.jpg" alt="Ziway Bird Watching">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span><i class="fas fa-user"></i> Michael</span>
+                            <span><i class="fas fa-calendar"></i> January 10, 2024</span>
+                        </div>
+                        <h3>Bird Paradise at Lake Ziway</h3>
+                        <p>Witnessing thousands of migratory birds in their natural habitat was an unforgettable experience. The boat trip to the island monasteries was serene...</p>
+                    </div>
+                </div>
+<!-- Story 5 -->
+                <div class="story-card">
+                    <div class="story-media">
+                        <img src="image/arba1.jpg" alt="Ziway Bird Watching">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span><i class="fas fa-user"></i> Gelila</span>
+                            <span><i class="fas fa-calendar"></i> May 21, 2024</span>
+                        </div>
+                        <h3>ArbaMinch </h3>
+                        <p>The sheer abundance of life in Arba Minch is breathtaking; seeing thousands of birds in the wetlands of Nechisar National Park was a dream. Whether trekking through the lush forest of the Forty Springs or taking a peaceful boat ride to see the hippos and giant crocodiles, every moment felt like a discovery.</p>
+                    </div>
+                </div>
+                <!-- Story 6 -->
+                <div class="story-card">
+                    <div class="story-media">
+                        <img src="image/lalibela.jpg" alt="Ziway Bird Watching">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span><i class="fas fa-user"></i> Frehiwot</span>
+                            <span><i class="fas fa-calendar"></i> April 13, 2024</span>
+                        </div>
+                        <h3>Lalibela</h3>
+                        <p>Standing amidst the towering rock-hewn churches as the sun hit the red volcanic stone was an unforgettable experience. The serene hike up to the Asheton Maryam monastery offered a breathtaking view of the Lasta mountains, making the spiritual journey feel even more profound.</p>
+                    </div>
+            </div>
+            
+           
+                </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <h3>Enzur-Ethio Travel Agency</h3>
+                    <p class="footer-text">Providing authentic Ethiopian travel experiences since 2015. Discover the real Ethiopia with local experts.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="tours.html">Tour Packages</a></li>
+                        <li><a href="stories.html">Travel Stories</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Destinations -->
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="mekele.html">Mekele</a></li>
+                        <li><a href="gonder.html">Gondar</a></li>
+                        <li><a href="wenchi.html">Wenchi</a></li>
+                        <li><a href="ziway.html">Ziway</a></li>
+                        <li><a href="arbaminch.html">Arba Minch</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</li>
+                        <li><i class="fas fa-phone"></i> +251 91 234 5678</li>
+                        <li><i class="fas fa-phone"></i> +251 92 345 6789</li>
+                        <li><i class="fas fa-envelope"></i> info@enzurethio.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 5:30 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Enzur-Ethio Travel Agency. All rights reserved.</p>
+                <p>Website designed for HTML & CSS Final Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for Mobile Menu -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show');
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.querySelector('.nav-menu');
+            const mobileToggle = document.getElementById('mobileToggle');
+            
+            if (!navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
+                navMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
