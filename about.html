@@ -237,39 +237,8 @@
             }
         });
 
-        // Animate stats counting
-        function animateStats() {
-            const stats = document.querySelectorAll('.stat-number');
-            stats.forEach(stat => {
-                const target = parseInt(stat.textContent);
-                let current = 0;
-                const increment = target / 50;
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        stat.textContent = target + stat.textContent.replace(target, '');
-                        clearInterval(timer);
-                    } else {
-                        stat.textContent = Math.floor(current) + stat.textContent.replace(target, '');
-                    }
-                }, 30);
-            });
-        }
 
-        // Animate stats when in viewport
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateStats();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        const statsSection = document.querySelector('.our-story');
-        if (statsSection) {
-            observer.observe(statsSection);
-        }
+    
     </script>
 </body>
 </html>
