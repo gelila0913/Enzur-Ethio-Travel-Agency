@@ -154,6 +154,13 @@ img {
 }
 @media (max-width: 768px) {
     /* Mobile Navigation */
+    .footer-links{
+        margin-left: 50%;
+    }
+    .footer-col h4{
+        margin-left: 50%;
+
+    }
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -228,16 +235,6 @@ img {
     animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* ===== CONTACT INFO SECTION ===== */
 .contact-info-section {
@@ -643,6 +640,7 @@ img {
     background-color: var(--dark);
     color: var(--white);
     padding: 60px 0 30px;
+    justify-content: center;
 }
 
 .footer-grid {
