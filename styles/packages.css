@@ -567,17 +567,6 @@ img {
     padding-bottom: 10px;
 }
 
-.footer-col h3::after,
-.footer-col h4::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background-color: var(--secondary);
-}
-
 .footer-text {
     color: #B0BEC5;
     margin-bottom: 25px;
@@ -945,12 +934,6 @@ img {
         text-align: center;
     }
     
-    .footer-col h3::after,
-    .footer-col h4::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
     .social-links {
         justify-content: center;
     }
@@ -1074,4 +1057,5 @@ html:focus-within {
         display: none !important;
     }
 }
+
 
