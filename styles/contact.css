@@ -678,3 +678,6 @@ img {
     border-radius: 50%;
     color
 }
+.footer-links a:hover {
+    color:var(--secondary);
+}

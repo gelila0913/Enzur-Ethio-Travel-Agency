@@ -87,7 +87,6 @@ img {
 /* 2. HEADER & NAVIGATION - Consistent with Homepage */
 .header {
     background-color: var(--white);
-    box-shadow: var(--shadow);
     position: fixed;
     width: 100%;
     top: 0;
@@ -113,7 +112,7 @@ img {
 
 .logo h1 {
     font-size: 1.8rem;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .brand {
@@ -124,7 +123,7 @@ img {
     font-size: 0.9rem;
     color: var(--text-light);
     font-weight: 300;
-    font-style: italic;
+    
 }
 
 /* Navigation Menu - Same as Homepage */
@@ -176,7 +175,6 @@ img {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    margin-top: -70px;
     padding: 20px;
     position: relative;
 }
@@ -217,7 +215,6 @@ img {
     position: relative;
     z-index: 10;
     max-width: 1100px;
-    animation: fadeIn 0.6s ease-out;
 }
 
 .destinations-nav h3 {
@@ -577,6 +574,7 @@ img {
 .social-links {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .social-links a {
@@ -613,10 +611,6 @@ img {
 .footer-links a:hover {
     color: var(--secondary);
     padding-left: 5px;
-}
-
-.footer-links a:hover::before {
-    opacity: 1;
 }
 
 .contact-info li {
@@ -827,20 +821,21 @@ img {
     .footer-grid {
         gap: 40px;
     }
+    
 }
-
+/*Landscape mobile*/
 @media (max-width: 600px) {
     .destinations-links a {
         min-width: 100%;
     }
 }
+    /* Small Mobile */
 
 @media (max-width: 480px) {
     .container {
         padding: 0 20px;
     }
     
-    /* Page Hero - Small Mobile */
     .page-hero {
         height: 40vh;
         min-height: 250px;
@@ -972,90 +967,4 @@ img {
 html:focus-within {
     scroll-behavior: smooth;
 }
-
-/* 12. PRINT STYLES - Consistent with Homepage */
-@media print {
-    .header,
-    .footer,
-    .destinations-nav,
-    .package-footer,
-    .destinations-links,
-    .btn-small,
-    .btn-outline,
-    .btn-primary,
-    .mobile-toggle,
-    .social-links {
-        display: none !important;
-    }
-    
-    body {
-        font-size: 12pt;
-        color: #000;
-        background: none;
-        padding-top: 0;
-        line-height: 1.4;
-    }
-    
-    .container {
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .page-hero {
-        background: none !important;
-        color: #000;
-        height: auto;
-        margin-top: 0;
-        padding: 0;
-    }
-    
-    .page-hero-content {
-        background: none;
-        backdrop-filter: none;
-        padding: 20px 0;
-    }
-    
-    .page-title {
-        color: #000;
-        text-shadow: none;
-        font-size: 24pt;
-    }
-    
-    .page-subtitle {
-        color: #444;
-        font-size: 14pt;
-    }
-    
-    .destination-section {
-        padding: 20px 0;
-        page-break-inside: avoid;
-        box-shadow: none;
-        border: 1px solid #ddd;
-        margin: 20px 0;
-        background: none;
-    }
-    
-    .package-card {
-        box-shadow: none;
-        border: 1px solid #ddd;
-        margin-bottom: 20px;
-        page-break-inside: avoid;
-    }
-    
-    .package-header,
-    .package-body {
-        padding: 15px;
-    }
-    
-    .package-price {
-        color: #000;
-    }
-    
-   
-    .no-print {
-        display: none !important;
-    }
-}
-
 

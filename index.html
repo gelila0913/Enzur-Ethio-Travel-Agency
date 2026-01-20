@@ -51,7 +51,7 @@
             </div>
         </div>
     </section>
-<!-- In your index.html homepage -->
+<!-- section  -->
 <section class="section destinations">
     <div class="container">
         <h2 class="section-title">Popular Ethiopian Destinations</h2>
@@ -238,7 +238,7 @@
                         <p>Watching the sunrise over Lake Hawassa while surrounded by thousands of Marabou storks and Pelicans was truly unforgettable. Taking a boat out onto the water felt so serene, offering a perfect view of the lush hills and the vibrant life along the shore.</p>
                     </div>
                 </div>
-<!-- Story 4 -->
+                  <!-- Story 4 -->
                 <div class="story-card">
                     <div class="story-media">
                         <img src="image/ziway5.jpg" alt="Ziway Bird Watching">
@@ -252,7 +252,7 @@
                         <p>Witnessing thousands of migratory birds in their natural habitat was an unforgettable experience. The boat trip to the island monasteries was serene...</p>
                     </div>
                 </div>
-<!-- Story 5 -->
+                 <!-- Story 5 -->
                 <div class="story-card">
                     <div class="story-media">
                         <img src="image/arba1.jpg" alt="Ziway Bird Watching">
@@ -306,9 +306,8 @@
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="tours.html">Tour Packages</a></li>
-                        <li><a href="stories.html">Travel Stories</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -359,7 +358,7 @@
             const navMenu = document.querySelector('.nav-menu');
             const mobileToggle = document.getElementById('mobileToggle');
             
-            if (!navMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
+            if (!mobileToggle.contains(event.target)) {
                 navMenu.classList.remove('show');
             }
         });

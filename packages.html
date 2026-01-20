@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Packages | Enzur-Ethio Travel Agency</title>
     <link rel="stylesheet" href="styles/packages.css">
+    <link rel="stylesheet" href="styles/booking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -66,7 +67,7 @@
         </div>
     </section>
 
-    <!-- ===== MEKELE DESTINATION SECTION ===== -->
+    <!-- =====  Mekelw DESTINATION SECTION ===== -->
     <section id="mekele" class="section destination-section">
         <div class="container">
             <div class="destination-header">
@@ -100,7 +101,7 @@
                         </div>
                     </div>
                     <div class="package-footer">
-                        <a href="booking.html?tour=mekele-cultural" class="btn-outline">Book Now</a>
+                        <a class="btn-outline">Book Now</a>
                     </div>
                 </div>
                 
@@ -129,7 +130,7 @@
                         </div>
                     </div>
                     <div class="package-footer">
-                        <a href="booking.html?tour=tigray-heritage" class="btn-outline">Book Now</a>
+                        <a  class="btn-outline">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -171,7 +172,7 @@
                         </div>
                     </div>
                     <div class="package-footer">
-                        <a href="booking.html?tour=gondar-castle" class="btn-primary">Book Now</a>
+                        <a class="btn-primary">Book Now</a>
                     </div>
                 </div>
                 
@@ -200,7 +201,7 @@
                         </div>
                     </div>
                     <div class="package-footer">
-                        <a href="booking.html?tour=gondar-simien" class="btn-outline">Book Now</a>
+                        <a  class="btn-outline">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -548,6 +549,7 @@
         </div>
     </footer>
 
+    <script src="js/booking.js"></script>
     <script>
         // Mobile menu toggle
         document.getElementById('mobileToggle').addEventListener('click', function() {
@@ -564,32 +566,6 @@
                 navMenu.classList.remove('show');
             }
         });
-
-        // Highlight active destination in navigation
-        window.addEventListener('hashchange', function() {
-            highlightActiveDestination();
-        });
-
-        // Highlight on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            highlightActiveDestination();
-        });
-
-        function highlightActiveDestination() {
-            // Remove active class from all links
-            document.querySelectorAll('.destinations-links a').forEach(link => {
-                link.classList.remove('active');
-            });
-            
-            // Add active class to current destination
-            const hash = window.location.hash;
-            if (hash) {
-                const activeLink = document.querySelector(`.destinations-links a[href="${hash}"]`);
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                }
-            }
-        }
     </script>
 </body>
 </html>

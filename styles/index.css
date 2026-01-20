@@ -180,7 +180,7 @@ img {
 .hero-subtitle {
     font-size: 1.4rem;
     margin-bottom: 40px;
-    opacity: 0.95;
+    opacity: 1;
     font-weight: 300;
     line-height: 1.6;
     max-width: 700px;
@@ -246,83 +246,8 @@ img {
         padding: 14px 30px;
     }
 
-@media (max-width: 480px) {
-    .hero {
-        height: 85vh;
-        min-height: 550px;
-    }
-    
-    .hero-title {
-        font-size: 2.2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-        margin-bottom: 30px;
-    }
-    
-    .hero-buttons a {
-        padding: 13px 25px;
-        font-size: 1rem;
-        max-width: 250px;
-    }
-}
-    
 
-
-/* EXTRA FIX FOR VERY SMALL SCREENS (iPhone SE, etc) */
-@media (max-width: 375px) {
-    .hero-title {
-        font-size: 1.6rem; /* Even smaller for tiny screens */
-    }
-    
-    .hero-subtitle {
-        font-size: 0.9rem;
-    }
-    
-    .hero-content {
-        padding: 15px 10px;
-    }
-    
-    .logo h1 {
-        font-size: 1.5rem; /* Smaller logo on very small screens */
-    }
-    
-    .tagline {
-        font-size: 0.8rem;
-    }
-}
-
-/* FIX FOR LANDSCAPE MODE ON MOBILE */
-@media (max-height: 600px) and (orientation: landscape) {
-    .hero {
-        min-height: 100vh; /* Full height in landscape */
-        padding: 60px 20px; /* More vertical padding */
-    }
-    
-    .hero-title {
-        font-size: 2rem; /* Slightly smaller in landscape */
-        margin-bottom: 10px;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.95rem;
-        margin-bottom: 20px;
-    }
-    
-    .hero-buttons {
-        flex-direction: row; /* Keep buttons side by side in landscape */
-        gap: 15px;
-    }
-    
-    .hero-buttons a {
-        width: auto; /* Auto width in landscape */
-        min-width: 150px;
-    }
-}
-
-
-/* 4. BUTTON STYLES */
+/* 4. additional features BUTTON STYLES */
 .btn-primary,
 .btn-secondary,
 .btn-small,
@@ -387,16 +312,7 @@ img {
     color: var(--white);
 }
 
-.btn-text {
-    background: none;
-    color: var(--primary);
-    padding: 8px 0;
-}
 
-.btn-text:hover {
-    color: var(--accent);
-    gap: 12px;
-}
 
 /* 5. SECTION COMMON STYLES */
 .section-title {
@@ -656,8 +572,57 @@ img {
 .footer-bottom p:first-child {
     margin-bottom: 10px;
 }
+/* FOR VERY SMALL SCREENS  */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.6rem; 
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero-content {
+        padding: 15px 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem; 
+    }
+    
+    .tagline {
+        font-size: 0.8rem;
+    }
+}
 
-/* 10. RESPONSIVE DESIGN */
+/* FIX FOR LANDSCAPE MODE ON MOBILE */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh; /* Full height in landscape */
+        padding: 60px 20px; /* More vertical padding */
+    }
+    
+    .hero-title {
+        font-size: 2rem; /* Slightly smaller in landscape */
+        margin-bottom: 10px;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-buttons {
+        flex-direction: row; /* Keep buttons side by side in landscape */
+        gap: 15px;
+    }
+    
+    .hero-buttons a {
+        width: auto; /* Auto width in landscape */
+        min-width: 150px;
+    }
+}
+/*  RESPONSIVE DESIGN for tablet size */
 @media (max-width: 1024px) {
     .container {
         padding: 0 30px;
@@ -808,41 +773,3 @@ img {
 }
 
 
-/* 13. PRINT STYLES */
-@media print {
-    .header,
-    .footer,
-    .hero-buttons,
-    .package-footer,
-    .btn-text {
-        display: none !important;
-    }
-    
-    body {
-        font-size: 12pt;
-        color: #000;
-        background: none;
-    }
-    
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-    
-    .section {
-        padding: 20px 0;
-        page-break-inside: avoid;
-    }
-    
-    .hero {
-        background: none !important;
-        color: #000;
-        height: auto;
-        margin-top: 0;
-    }
-    
-    .hero-title {
-        color: #000;
-        text-shadow: none;
-    }
-}
